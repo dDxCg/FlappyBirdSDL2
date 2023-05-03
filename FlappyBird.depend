@@ -1,0 +1,76 @@
+# depslib dependency file v1.0
+1683124707 source:d:\baitap\flappybird\commonfunc.cpp
+	"CommonFunc.h"
+
+1683033863 source:d:\baitap\flappybird\baseobject.cpp
+	"BaseObject.h"
+
+1683118634 d:\baitap\flappybird\baseobject.h
+	"CommonFunc.h"
+
+1683134675 d:\baitap\flappybird\commonfunc.h
+	<windows.h>
+	<vector>
+	<string>
+	<iostream>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_mixer.h>
+	<SDL_ttf.h>
+	"BaseObject.h"
+	"TextManager.h"
+
+1683135040 source:d:\baitap\flappybird\main.cpp
+	"CommonFunc.h"
+	"BaseObject.h"
+	"Player.h"
+	"Block.h"
+	"TextManager.h"
+	"MainMenu.h"
+	<cstdlib>
+	<ctime>
+
+1683132954 d:\baitap\flappybird\player.h
+	"CommonFunc.h"
+
+1683135323 source:d:\baitap\flappybird\player.cpp
+	"Player.h"
+
+1683135597 source:d:\baitap\flappybird\block.cpp
+	"Block.h"
+
+1683033863 source:d:\baitap\flappybird\geometric.cpp
+	"Geometric.h"
+
+1683033863 d:\baitap\flappybird\geometric.h
+	"CommonFunc.h"
+
+1683118739 d:\baitap\flappybird\block.h
+	"BaseObject.h"
+
+1683118855 source:d:\baitap\flappybird\button.cpp
+	"Button.h"
+
+1683118828 d:\baitap\flappybird\button.h
+	"BaseObject.h"
+
+1683132346 source:d:\baitap\flappybird\textmanager.cpp
+	"TextManager.h"
+
+1683131799 d:\baitap\flappybird\textmanager.h
+	"CommonFunc.h"
+
+1683118895 source:d:\baitap\flappybird\menu.cpp
+	"Menu.h"
+
+1683118896 d:\baitap\flappybird\menu.h
+	"Button.h"
+	"TextManager.h"
+	"CommonFunc.h"
+
+1683129447 source:d:\baitap\flappybird\mainmenu..cpp
+	"MainMenu.h"
+
+1683127894 d:\baitap\flappybird\mainmenu.h
+	"BaseObject.h"
+
