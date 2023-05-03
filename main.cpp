@@ -77,6 +77,9 @@ int main(int argc, char* argv[]) {
     g_ground.SetRect(0, GROUND_MAP, 800, 80);
 
     menu.Init(g_screen);
+    TextManager guide;
+    guide.CreateFontA("Font//ARCADE.ttf", 50);
+    guide.Text("Press Space to Jump", 255, 255, 255, g_screen);
     while (!menu.getClicked()) {
         if (menu.EventHandling(g_event) == -1) {
             quit = true;
@@ -84,9 +87,11 @@ int main(int argc, char* argv[]) {
         }
         SDL_RenderClear(g_screen);
         menu.RenderMenu(g_screen);
+        guide.Render(g_screen, 150, 250);
         SDL_RenderPresent(g_screen);
     }
     menu.FreeMenu();
+
 
 
 
@@ -160,7 +165,8 @@ again_label:
                 }
                 SDL_RenderClear(g_screen);
                 menu.RenderMenu(g_screen);
-                scoreText.Render(g_screen, 230, 320);
+                scoreText.Render(g_screen, 220, 300);
+                guide.Render(g_screen, 150, 250);
                 SDL_RenderPresent(g_screen);
             }
             menu.FreeMenu();
